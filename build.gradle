@@ -2,8 +2,8 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-group 'in.wavelabs'
-version '0.0.4'
+group 'io.nbos'
+version '0.0.1'
 dependencies {
      compile 'in.wavelabs:idn-java-api:0.3.1'
 }
@@ -21,8 +21,8 @@ model {
 //
 //
 ext {
-     apiClientPomFile = file("${project.projectDir}/build/idn-opencart-api-${version}.pom")
-     signedApiClientPomFile = file("${project.projectDir}/build/idn-opencart-api-${version}.asc")
+     apiClientPomFile = file("${project.projectDir}/build/module-wordpress-${version}.pom")
+     signedApiClientPomFile = file("${project.projectDir}/build/module-wordpress-${version}.asc")
 }
 
 // avoids duplicates in a jar file
@@ -48,17 +48,17 @@ task apiClientDocs(type: Javadoc) {
 }
 
 task apiClientJar(type: Jar, dependsOn: [classes]) {
-     baseName = 'idn-opencart-api'
+     baseName = 'module-wordpress'
      from sourceSets.main.output
 }
 
 task apiClientSourceJar(type: Jar) {
-     baseName = 'idn-opencart-api-sources'
+     baseName = 'module-wordpress-sources'
      from(sourceSets.main.java)
 }
 
 task apiClientDocsJar(type: Jar, dependsOn: apiClientDocs) {
-     baseName = 'idn-opencart-api-javadoc'
+     baseName = 'module-wordpress-javadoc'
      from apiClientDocs.destinationDir
 }
 //
@@ -115,7 +115,7 @@ publishing {
                          extension = 'jar.asc'
                     }
                }
-               def signedPomFile = file("${project.projectDir}/build/idn-opencart-api-${version}.pom.asc")
+               def signedPomFile = file("${project.projectDir}/build/module-wordpress-${version}.pom.asc")
                if (signedPomFile) {
                     artifact(signedPomFile) {
                          classifier = null
@@ -126,8 +126,8 @@ publishing {
                     def node = asNode()
                     node.children().last() + {
                          resolveStrategy = DELEGATE_FIRST
-                         name 'NBOS OpenCart API'
-                         description 'description for project'
+                         name 'NBOS Wordpress Module'
+                         description 'Wordpress Module for NBOS'
                          url 'https://github.com/nbostech/wavelabs-java-client-api'
                          scm {
                               url 'https://github.com/nbostech/wavelabs-java-client-api'

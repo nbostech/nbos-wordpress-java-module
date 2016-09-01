@@ -1,9 +1,9 @@
-package com.nbos.capi.modules.wordpress.v0;
+package io.nbos.capi.modules.wordpress.v0;
 
 import com.nbos.capi.api.v0.IdnCallback;
 import com.nbos.capi.api.v0.NetworkApi;
-import com.nbos.capi.modules.wordpress.v0.models.blog.BlogCategory;
-import com.nbos.capi.modules.wordpress.v0.models.blog.BlogPost;
+import io.nbos.capi.modules.wordpress.v0.models.blog.BlogCategory;
+import io.nbos.capi.modules.wordpress.v0.models.blog.BlogPost;
 
 import java.util.List;
 

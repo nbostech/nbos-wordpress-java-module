@@ -1,4 +1,4 @@
-package com.nbos.capi.modules.wordpress.v0.models.blog;
+package io.nbos.capi.modules.wordpress.v0.models.blog;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

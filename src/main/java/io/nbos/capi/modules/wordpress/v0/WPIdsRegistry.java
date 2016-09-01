@@ -1,4 +1,4 @@
-package com.nbos.capi.modules.wordpress.v0;
+package io.nbos.capi.modules.wordpress.v0;
 
 import com.nbos.capi.modules.ids.v0.IDS;
 
@@ -8,6 +8,6 @@ import com.nbos.capi.modules.ids.v0.IDS;
 
 public class WPIdsRegistry {
     static {
-        IDS.register("wordpress", WordPressApi.class);
+        IDS.register("wordpress", com.nbos.capi.modules.wordpress.v0.WordPressApi.class);
     }
 }

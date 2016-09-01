@@ -1,6 +1,6 @@
-package com.nbos.capi.modules.wordpress.v0;
-import com.nbos.capi.modules.wordpress.v0.models.blog.BlogCategory;
-import com.nbos.capi.modules.wordpress.v0.models.blog.BlogPost;
+package io.nbos.capi.modules.wordpress.v0;
+import io.nbos.capi.modules.wordpress.v0.models.blog.BlogCategory;
+import io.nbos.capi.modules.wordpress.v0.models.blog.BlogPost;
 
 import java.util.List;
 

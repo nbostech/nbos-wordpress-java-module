@@ -1,4 +1,4 @@
-package com.nbos.capi.modules.wordpress.v0.models.blog;
+package io.nbos.capi.modules.wordpress.v0.models.blog;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -19,7 +19,7 @@ public class LinksModel {
         return self;
     }
 
-    public List<AboutModel> getAbout() {
+    public List<io.nbos.capi.modules.wordpress.v0.models.blog.AboutModel> getAbout() {
         return about;
     }
 
@@ -32,7 +32,7 @@ public class LinksModel {
     }
 
     List<CollectionModel> collection;
-    List<AboutModel> about;
+    List<io.nbos.capi.modules.wordpress.v0.models.blog.AboutModel> about;
     List<UpModel> up;
     @SerializedName("http://api.w.org/v2/post_type")
     List<PostTypeModel> postType;
