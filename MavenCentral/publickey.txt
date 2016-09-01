@@ -1,0 +1,19 @@
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: C:/Users/vivek/AppData/Roaming/gnupg/trustdb.gpg: trustdb created
+gpg: key 9C267677 marked as ultimately trusted
+public and secret key created and signed.
+
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+pub   2048R/9C267677 2016-04-11
+      Key fingerprint = B49C 3F0B 1EE6 4643 1609  2E10 7B5A 7DAF 9C26 7677
+uid       [ultimate] WaveLabs <mavencentral@wavelabs.in>
+sub   2048R/AD135D33 2016-04-11
